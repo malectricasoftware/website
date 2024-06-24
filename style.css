@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'leet';
-  src: url('dosis.extralight.ttf') format('truetype');
+  src: url('./fonts/dosis.extralight.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'ppheehee';
-  src: url('uni-sans.heavy-caps.otf') format('opentype');
+  src: url('./fonts/uni-sans.heavy-caps.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'nav';
-  src: url('sui-generis-free.rg-regular.otf') format('opentype');
+  src: url('./fonts/sui-generis-free.rg-regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'wowww';
-  src: url('metropolis.regular.otf') format('opentype');
+  src: url('./fonts/metropolis.regular.otf') format('opentype');
 }
 
 /* Reset and General Styles */
