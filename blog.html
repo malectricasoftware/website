@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malectrica Blog</title>
+    <link rel="icon" type="image/png" href="icotrp.png">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="logotrp.svg" alt="Malectrica Logo">
+            <nav>
+                <ul>
+                    <li><a href="./index.html#home">Home</a></li>
+                    <li><a href="./index.html#services">Services</a></li>
+                    <li><a href="./index.html#about">About</a></li>
+                    <li><a href="./index.html#blog">Blog</a></li>
+                    <li><a href="./index.html#bugs">Bugs Found</a></li>
+                    <li><a href="./index.html#tools-packages">Tools</a></li>
+                    <li><a href="./index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="blog-header">
+        <div class="container">
+            <h1>Welcome to the Malectrica Blog</h1>
+            <p>Stay updated with the latest trends and tips in cybersecurity as well as some of our team's explorations.</p>
+        </div>
+    </section>
+
+    <section class="blog-content">
+        <div class="container">
+            <article class="blog-post" id="coop-catacombs">
+                <h2>The Manganelo Hack (Uncovering a Security Disaster)</h2>
+                <p class="author">By Witchdocsec and Tonabrix1</p>
+
+                <div class="subsection">
+                    <h3>Initial Investigation</h3>
+                    <p>This started when the researcher Tonabrix sent a link to a manga website, he asked us to confirm it authenticated us to his account when clicked. Indeed it did, this was concerning because the only 2 parameters that were used for said authentication process were a base64 encoded username and userID. While userIDs are not public and must be enumerated this is trivial due to a total lack of rate limiting, despite the high number of registered accounts (over 2 million). Our testing revealed it was possible for any account to be compromised knowing only its username in a maximum of around 8 hours when the script is run on a single machine, and 4 when run by the both of us. However in practice the required time could be drastically shortened simply by knowing the rough time-frame in which the target registered their account. We were able to identify a total of 15 domains of theirs on which this attack worked. This is because they have a singular subdomain which takes a username and password and issues a redirect to the desired domain authenticating implicitly via the parameters mentioned prior. This allows us to see and modify the users bookmarks.</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>Further Findings</h3>
+                    <p>We decided after this to shift our focus to the shared authentication subdomain in search of alternative and more efficient ATO methods. Soon we found them:</p>
+                    <p>CSRF to change the email address, or password (without need for the previous one), or both (why not).</p>
+                    <p>Weak password policy (maximum of 20 chars alphanumeric) combined with captchas being header matched and bypassable simply by sending a known captcha answer with the matching headers, results in trivial account bruteforce.</p>
+                    <p>The password reset form does not send out emails, instead simply knowing the email and username will grant access to the dialogue to issue a new password (without need for the previous one), these can also be enumerated as the same captca bypass is present in all instances where a captcha is employed (we also found several captcha bypasses for different functionalities via direct navigation due to the heavy reliance on redirection with parameters).</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>Attempt At Resolution</h3>
+                    <p>We tried to report these issues to them a while ago and sent several follow up emails (to no reply) when looking back over the website it occurred to us that some of the content is shall we say unsavory and morally reprehensible (without getting into too much detail we do not mean simply because it is smut). The site is popular enough we suspect the majority of users are well intentioned and oblivious, and reading the legitimate (or perhaps ultimately harmless fetish) material. However due to the access to, and control over bookmarks, this presents a huge extortion risk via things like planted and screenshotted bookmarks.</p>
+                </div>
+                <div class="subsection">
+                    <h3>Our Conclusion And Advice</h3>
+                    <p>In conclusion manganelo host harmful material, their websites are riddled with security holes and crumbles when you touch them (neither of these facts seem to concern them, we have sent 3 emails to the website. including our intentions to go public should they continue to ignore us. our lack of need for monetary reward, and simple desire for the issues to be acknowledged and a commitment made to addressing them). We were able to find 4 separate methods for account takeover, and 2 captcha bypasses, giving us the ability to ultimately compromise any of the over 2 million accounts registered with them. This took us a single evening. It is our advice that any legitimate users of the following domains:</p>
+                    <p>manganato.com</p>
+                    <p>chapmanganato.com</p>
+                    <p>mangakakalot.to</p>
+                    <p>mangakakalot.com</p>
+                    <p>mangabat.com</p>
+                    <p>readmangabat.com</p>
+                    <p>mkklcdnv6temp.com (no logins, used as cdn for the other sites but is a valid manga site itself)</p>
+                    <p>mangairu.com</p>
+                    <p>mngusr.com</p>
+                    <p>manganelo.com</p>
+                    <p>chapmanganelo.com</p>
+                    <p>and any other associated domains, delete their account in entirely and never use them again.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Malectrica | All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
