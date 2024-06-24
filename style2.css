@@ -1,0 +1,208 @@
+@font-face {
+  font-family: 'leet';
+  src: url('dosis.extralight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ppheehee';
+  src: url('uni-sans.heavy-caps.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'nav';
+  src: url('sui-generis-free.rg-regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'wowww';
+  src: url('metropolis.regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'title';
+  src: url('open-sans.regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0e0e0e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #111;
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    height: 40px;
+}
+
+.header nav ul {
+    font-family: nav;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin-left: 1em;
+}
+
+.header nav ul li a {
+    color: #00FFFF; /* Text color */
+    text-decoration: none;
+    padding: 1em; /* Adjusted padding to make the highlight cover the full height */
+    transition: color 0.3s, background-color 0.3s; /* Add background color transition */
+    position: relative; /* Needed for the box highlight effect */
+    z-index: 1; /* Ensure the text is above the highlight box */
+}
+
+.header nav ul li a::before {
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Positioning relative to the parent */
+    left: 0;
+    width: 100%; /* Full width of the parent */
+    height: 100%; /* Full height of the parent */
+    background-color: #00FFFF; /* Highlight box color */
+    opacity: 0; /* Start with no opacity */
+    transition: opacity 0.3s; /* Smooth transition */
+    z-index: -1; /* Place it behind the text */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.header nav ul li a:hover::before {
+    opacity: 0.2; /* Slightly visible highlight box on hover */
+}
+
+.header nav ul li a:hover {
+    color: #0dd3d3; /* Change text color on hover */
+}
+
+.blog-header {
+    background-color: #1a1a1a;
+    padding: 5em 0;
+    text-align: center;
+    margin-top: 4em; /* Offset for fixed header */
+}
+
+.blog-header h1 {
+    font-family: ppheehee;
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.blog-header p {
+    font-family: wowww;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.blog-content {
+    padding: 2em 0;
+}
+
+.blog-post {
+    background-color: #333;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post h2 {
+    font-family: ppheehee;
+    font-size: 1.9rem;
+    margin-bottom: 0em;
+}
+
+.blog-post .author {
+    font-family: wowww;
+    color: #ccc;
+    margin-bottom: .4em;
+    font-style: italic;
+}
+
+.subsection {
+    margin-bottom: .5em;
+}
+
+.subsection h3 {
+    font-family: title;
+    font-size: 1rem;
+    margin-top: 2em;
+}
+
+.subsection img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: .5em;
+}
+
+.subsection p {
+    font-family: Arial, sans-serif;
+    font-size: .9em;
+    color: #ccc;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Scroll Animations */
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
