@@ -1,28 +1,30 @@
+/* Common Font Definitions */
 @font-face {
   font-family: 'leet';
-  src: url('../fonts/dosis.extralight.ttf') format('truetype');
+  src: url('../../fonts/dosis.extralight.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'ppheehee';
-  src: url('../fonts/uni-sans.heavy-caps.otf') format('opentype');
+  src: url('../../fonts/uni-sans.heavy-caps.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'nav';
-  src: url('../fonts/sui-generis-free.rg-regular.otf') format('opentype');
+  src: url('../../fonts/sui-generis-free.rg-regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'wowww';
-  src: url('../fonts/metropolis.regular.otf') format('opentype');
+  src: url('../../fonts/metropolis.regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'title';
-  src: url('../fonts/open-sans.regular.ttf') format('truetype');
+  src: url('../../fonts/open-sans.regular.ttf') format('truetype');
 }
 
+/* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +36,9 @@ body {
     background-color: #0e0e0e;
     color: #fff;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
@@ -41,6 +46,7 @@ body {
     margin: 0 auto;
 }
 
+/* Header Styles */
 .header {
     background-color: #111;
     padding: 1em 0;
@@ -104,6 +110,7 @@ body {
     color: #0dd3d3; /* Change text color on hover */
 }
 
+/* Blog Header Styles */
 .blog-header {
     background-color: #1a1a1a;
     padding: 5em 0;
@@ -123,8 +130,10 @@ body {
     color: #ccc;
 }
 
+/* Blog Content Styles */
 .blog-content {
     padding: 2em 0;
+    flex: 1; /* This will allow the content to grow and push the footer to the bottom */
 }
 
 .blog-post {
@@ -177,12 +186,28 @@ body {
     color: #ccc;
 }
 
+/* Link Title Styles */
+a.blog-title {
+    font-family: ppheehee;
+    font-size: 1.9rem;
+    color: #00FFFF;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+a.blog-title:hover {
+    color: #0dd3d3;
+    border-bottom: 2px solid #00FFFF;
+}
+
 /* Footer Styles */
 .footer {
     background-color: #222;
     color: #ccc;
     text-align: center;
     padding: 1em 0;
+    margin-top: auto; /* Ensure footer is at the bottom */
 }
 
 .footer p {
