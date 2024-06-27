@@ -130,6 +130,28 @@ body {
     color: #ccc;
 }
 
+/* YouTube Button Styles */
+.youtube-button-container {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.youtube-button {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    font-family: wowww;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.youtube-button:hover {
+    background-color: #CC0000;
+    transform: scale(1.05);
+}
+
 /* Blog Content Styles */
 .blog-content {
     padding: 2em 0;
