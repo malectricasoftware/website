@@ -31,7 +31,7 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #0e0e0e;
+    background-color: #050009;
     color: #fff;
     line-height: 1.6;
     overflow-x: hidden; /* Prevent horizontal scroll */
@@ -44,7 +44,7 @@ body {
 
 /* Header Styles */
 .header {
-    background-color: #111;
+    background-color: #0d0215;
     padding: 1em 0;
     position: fixed;
     top: 0;
@@ -131,14 +131,14 @@ body {
 
 .hero .btn {
     display: inline-block;
-    background-color: #0dd3d3; /* Blue color for button */
+    background-color: #0d76d3; /* Blue color for button */
     color: #fff;
     padding: 1em 2em;
     font-family: wowww;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 27px;
     transition: background-color 0.3s, transform 0.3s;
-    border: 2px solid #0dd3d3; /* Blue border */
+    border: 2px solid #0d76d3; /* Blue border */
 }
 
 .hero .btn:hover {
@@ -149,7 +149,7 @@ body {
 
 /* Services Section Styles */
 .services {
-    background-color: #1a1a1a;
+    background-color: #140320;
     padding: 5em 0;
     text-align: center;
 }
@@ -162,7 +162,7 @@ body {
 }
 
 .service-item {
-    background-color: #333;
+    background-color: #050009;
     padding: 1.5em;
     border-radius: 8px;
     margin-bottom: 3em;
@@ -191,7 +191,7 @@ body {
 
 /* About Section Styles */
 .about {
-    background-color: #111;
+    background-color: #050009;
     color: #fff;
     padding: 5em 0;
     text-align: center;
@@ -263,7 +263,7 @@ body {
 
 /* Blog Section Styles */
 .blog {
-    background-color: #1A1A1A;
+    background-color: #140320;
     padding: 5em 0;
     text-align: center;
 }
@@ -277,7 +277,7 @@ body {
 
 .blog-item {
     display: block; /* Make the anchor tag block level */
-    background-color: #333;
+    background-color: #050009;
     padding: 1.5em;
     border-radius: 8px;
     margin-bottom: 1em;
@@ -310,7 +310,7 @@ body {
 
 /* Bugs Section Styles */
 .bugs {
-    background-color: #111;
+    background-color: #050009;
     padding: 5em 0;
     text-align: center;
 }
@@ -323,7 +323,7 @@ body {
 }
 
 .bug-item {
-    background-color: #333;
+    background-color: #140320;
     padding: 1em;
     border-radius: 8px;
     margin-bottom: 1em;
@@ -359,14 +359,14 @@ body {
 
 .bug-item .btn {
     display: inline-block;
-    background-color: #0dd3d3;
+    background-color: #0d76d3;
     color: #fff;
     padding: 0.5em 2em;
     font-family: wowww;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 20px;
     transition: background-color 0.3s, transform 0.3s;
-    border: 2px solid #0dd3d3;
+    border: 2px solid #0d76d3;
     margin-right: 0.9em; /* Space between buttons */
 }
 
@@ -384,7 +384,7 @@ body {
     font-size: 1rem;
     color: #fff;
     text-decoration: none;
-    background-color: #0fb8b8;
+    background-color: #0d76d3;
     border: none;
     border-radius: 20px;
     transition: background 0.3s, transform 0.3s;
@@ -417,7 +417,7 @@ body {
 
 /* Contact Section Styles */
 .contact {
-    background-color: #111;
+    background-color: #050009;
     color: #fff;
     padding: 5em 0;
     text-align: center;
@@ -448,8 +448,8 @@ body {
     padding: 1em;
     margin-bottom: 1.5em;
     font-size: 1rem;
-    border: 1px solid #444;
-    background-color: #333;
+    border: 2px solid #0d76d3;
+    background-color: #140320;
     color: #00FFFF;
     border-radius: 4px;
     height: 50px;
@@ -460,11 +460,11 @@ body {
 }
 
 .contact button {
-    background-color: #0dd3d3;
+    background-color: #0d76d3;
     color: #fff;
     padding: 1em 2em;
     border: none;
-    border-radius: 4px;
+    border-radius: 26px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
@@ -477,7 +477,7 @@ body {
 
 /* Tools and Packages Section Styles */
 .tools-packages {
-    background-color: #1a1a1a;
+    background-color: #140320;
     padding: 5em 0;
     text-align: center;
 }
@@ -490,7 +490,7 @@ body {
 }
 
 .tool-item {
-    background-color: #333;
+    background-color: #050009;
     padding: 1.5em;
     border-radius: 8px;
     margin-bottom: 3em;
@@ -527,14 +527,14 @@ body {
 
 .tool-item .btn {
     display: inline-block;
-    background-color: #0dd3d3;
+    background-color: #0d76d3;
     color: #fff;
     padding: 0.5em 1em;
     font-family: wowww;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 28px;
     transition: background-color 0.3s, transform 0.3s;
-    border: 2px solid #0dd3d3;
+    border: 2px solid #0d76d3;
     margin-right: 1em; /* Add some space between buttons */
 }
 
@@ -546,7 +546,7 @@ body {
 
 /* Footer Styles */
 .footer {
-    background-color: #222;
+    background-color: #140320;
     color: #ccc;
     text-align: center;
     padding: 1em 0;
