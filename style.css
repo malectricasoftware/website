@@ -131,14 +131,14 @@ body {
 
 .hero .btn {
     display: inline-block;
-    background-color: #0d76d3; /* Blue color for button */
+    background-color: #0dd3d3; /* Blue color for button */
     color: #fff;
     padding: 1em 2em;
     font-family: wowww;
     text-decoration: none;
     border-radius: 27px;
     transition: background-color 0.3s, transform 0.3s;
-    border: 2px solid #0d76d3; /* Blue border */
+    border: 2px solid #0dd3d3; /* Blue border */
 }
 
 .hero .btn:hover {
@@ -359,14 +359,14 @@ body {
 
 .bug-item .btn {
     display: inline-block;
-    background-color: #0d76d3;
+    background-color: #0dd3d3;
     color: #fff;
     padding: 0.5em 2em;
     font-family: wowww;
     text-decoration: none;
     border-radius: 20px;
     transition: background-color 0.3s, transform 0.3s;
-    border: 2px solid #0d76d3;
+    border: 2px solid #0dd3d3;
     margin-right: 0.9em; /* Space between buttons */
 }
 
@@ -384,7 +384,7 @@ body {
     font-size: 1rem;
     color: #fff;
     text-decoration: none;
-    background-color: #0d76d3;
+    background-color: #0fb8b8;
     border: none;
     border-radius: 20px;
     transition: background 0.3s, transform 0.3s;
@@ -460,7 +460,7 @@ body {
 }
 
 .contact button {
-    background-color: #0d76d3;
+    background-color: #0dd3d3;
     color: #fff;
     padding: 1em 2em;
     border: none;
@@ -527,14 +527,14 @@ body {
 
 .tool-item .btn {
     display: inline-block;
-    background-color: #0d76d3;
+    background-color: #0dd3d3;
     color: #fff;
     padding: 0.5em 1em;
     font-family: wowww;
     text-decoration: none;
     border-radius: 28px;
     transition: background-color 0.3s, transform 0.3s;
-    border: 2px solid #0d76d3;
+    border: 2px solid #0dd3d3;
     margin-right: 1em; /* Add some space between buttons */
 }
 
