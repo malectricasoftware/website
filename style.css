@@ -149,6 +149,7 @@ body {
 
 /* Services Section Styles */
 .services {
+    background: linear-gradient(to bottom, #050009, #11031c);
     background-color: #11031c;
     padding: 5em 0;
     text-align: center;
