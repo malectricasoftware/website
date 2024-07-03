@@ -364,7 +364,7 @@ body {
     padding: 0.5em 2em;
     font-family: wowww;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: background-color 0.3s, transform 0.3s;
     border: 2px solid #0dd3d3;
     margin-right: 0.9em; /* Space between buttons */
@@ -532,7 +532,7 @@ body {
     padding: 0.5em 1em;
     font-family: wowww;
     text-decoration: none;
-    border-radius: 28px;
+    border-radius: 10px;
     transition: background-color 0.3s, transform 0.3s;
     border: 2px solid #0dd3d3;
     margin-right: 1em; /* Add some space between buttons */
