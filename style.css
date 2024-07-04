@@ -149,7 +149,7 @@ body {
 
 /* Services Section Styles */
 .services {
-    background: linear-gradient(to bottom, #050009, #11031c 6%, #11031c 94%, #050009);
+    background: linear-gradient(to bottom, #050009, #11031c 10%, #11031c 90%, #050009);
     background-color: #11031c;
     padding: 5em 0;
     text-align: center;
@@ -192,7 +192,7 @@ body {
 
 /* About Section Styles */
 .about {
-    background: linear-gradient(to bottom, #050009 94%, #11031c);
+    background: linear-gradient(to bottom, #050009 90%, #11031c);
     background-color: #050009;
     color: #fff;
     padding: 5em 0;
@@ -265,7 +265,7 @@ body {
 
 /* Blog Section Styles */
 .blog {
-    background: linear-gradient(to bottom, #11031c 94%, #050009);
+    background: linear-gradient(to bottom, #11031c 90%, #050009);
     background-color: #11031c;
     padding: 5em 0;
     text-align: center;
@@ -313,7 +313,7 @@ body {
 
 /* Bugs Section Styles */
 .bugs {
-    background: linear-gradient(to bottom, #050009 94%, #11031c);
+    background: linear-gradient(to bottom, #050009 90%, #11031c);
     background-color: #050009;
     padding: 5em 0;
     text-align: center;
@@ -481,7 +481,7 @@ body {
 
 /* Tools and Packages Section Styles */
 .tools-packages {
-    background: linear-gradient(to bottom, #11031c 94%, #050009);
+    background: linear-gradient(to bottom, #11031c 90%, #050009);
     background-color: #11031c;
     padding: 5em 0;
     text-align: center;
