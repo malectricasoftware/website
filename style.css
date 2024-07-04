@@ -192,7 +192,7 @@ body {
 
 /* About Section Styles */
 .about {
-    background: linear-gradient(to bottom, #11031c 95%, #050009);
+    background: linear-gradient(to bottom, #050009 95%, #11031c);
     background-color: #050009;
     color: #fff;
     padding: 5em 0;
