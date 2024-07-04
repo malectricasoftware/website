@@ -112,6 +112,7 @@ body {
 
 /* Blog Header Styles */
 .blog-header {
+    background: linear-gradient(to bottom, #11031c 94%, #050009);
     background-color: #050009;
     padding: 5em 0;
     text-align: center;
