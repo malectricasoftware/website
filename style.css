@@ -192,7 +192,7 @@ body {
 
 /* About Section Styles */
 .about {
-    background: linear-gradient(to bottom, #11031c, #050009 50%, #11031c);
+    background: linear-gradient(to bottom, #050009, #11031c 50%, #050009);
     background-color: #050009;
     color: #fff;
     padding: 5em 0;
@@ -313,7 +313,7 @@ body {
 
 /* Bugs Section Styles */
 .bugs {
-    background: linear-gradient(to bottom, #11031c, #050009 50%, #11031c);
+    background: linear-gradient(to bottom, #050009, #11031c 50%, #050009);
     background-color: #050009;
     padding: 5em 0;
     text-align: center;
@@ -421,7 +421,7 @@ body {
 
 /* Contact Section Styles */
 .contact {
-    background: linear-gradient(to bottom, #11031c, #050009 50%, #11031c);
+    background: linear-gradient(to bottom, #050009, #11031c 50%, #050009);
     background-color: #050009;
     color: #fff;
     padding: 5em 0;
