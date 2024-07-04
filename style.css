@@ -313,6 +313,7 @@ body {
 
 /* Bugs Section Styles */
 .bugs {
+    background: linear-gradient(to bottom, #050009 90%, #11031c);
     background-color: #050009;
     padding: 5em 0;
     text-align: center;
@@ -480,6 +481,7 @@ body {
 
 /* Tools and Packages Section Styles */
 .tools-packages {
+    background: linear-gradient(to bottom, #11031c 90%, #050009);
     background-color: #11031c;
     padding: 5em 0;
     text-align: center;
