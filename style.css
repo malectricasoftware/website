@@ -20,335 +20,597 @@
 
 /* Reset and General Styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #050009;
-  color: #fff;
-  line-height: 1.6;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+    font-family: Arial, sans-serif;
+    background-color: #050009;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .container {
-  width: 80%;
-  margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* Header Styles */
 .header {
-  background-color: #000000;
-  padding: 1em 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
+    background-color: #000000;
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
 }
 
 .header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header img {
-  height: 40px; /* Adjust height as necessary */
+    height: 40px; /* Adjust height as necessary */
 }
 
 .header nav ul {
-  font-family: nav;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+    font-family: nav;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .header nav ul li {
-  margin-left: 1em;
+    margin-left: 1em;
 }
 
 .header nav ul li a {
-  color: #00FFFF; /* Text color */
-  text-decoration: none;
-  padding: 1em; /* Adjusted padding to make the highlight cover the full height */
-  transition: color 0.3s, background-color 0.3s; /* Add background color transition */
-  position: relative; /* Needed for the box highlight effect */
-  z-index: 1; /* Ensure the text is above the highlight box */
+    color: #00FFFF; /* Text color */
+    text-decoration: none;
+    padding: 1em; /* Adjusted padding to make the highlight cover the full height */
+    transition: color 0.3s, background-color 0.3s; /* Add background color transition */
+    position: relative; /* Needed for the box highlight effect */
+    z-index: 1; /* Ensure the text is above the highlight box */
 }
 
 .header nav ul li a::before {
-  content: ''; /* Empty content for the pseudo-element */
-  position: absolute; /* Absolute positioning */
-  top: 0; /* Positioning relative to the parent */
-  left: 0;
-  width: 100%; /* Full width of the parent */
-  height: 100%; /* Full height of the parent */
-  background-color: #00FFFF; /* Highlight box color */
-  opacity: 0; /* Start with no opacity */
-  transition: opacity 0.3s; /* Smooth transition */
-  z-index: -1; /* Place it behind the text */
-  border-radius: 4px; /* Rounded corners */
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Positioning relative to the parent */
+    left: 0;
+    width: 100%; /* Full width of the parent */
+    height: 100%; /* Full height of the parent */
+    background-color: #00FFFF; /* Highlight box color */
+    opacity: 0; /* Start with no opacity */
+    transition: opacity 0.3s; /* Smooth transition */
+    z-index: -1; /* Place it behind the text */
+    border-radius: 4px; /* Rounded corners */
 }
 
 .header nav ul li a:hover::before {
-  opacity: 0.2; /* Slightly visible highlight box on hover */
+    opacity: 0.2; /* Slightly visible highlight box on hover */
 }
 
 .header nav ul li a:hover {
-  color: #0dd3d3; /* Change text color on hover */
+    color: #0dd3d3; /* Change text color on hover */
 }
 
 /* Hero Section Styles */
 .hero {
-  background-image: url('home-background.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-align: center;
-  padding: 10em 0;
+    background-image: url('home-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 10em 0;
 }
 
 .hero h2 {
-  font-family: ppheehee;
-  font-size: 3.5rem;
-  margin-bottom: 0em;
+    font-family: ppheehee;
+    font-size: 3.5rem;
+    margin-bottom: 0em;
 }
 
 .hero p {
-  font-family: wowww;
-  font-size: 1.2rem;
-  margin-bottom: 2em;
+    font-family: wowww;
+    font-size: 1.2rem;
+    margin-bottom: 2em;
 }
 
 .hero .btn {
-  display: inline-block;
-  background-color: #0dd3d3; /* Blue color for button */
-  color: #fff;
-  padding: 1em 2em;
-  font-family: wowww;
-  text-decoration: none;
-  border-radius: 27px;
-  transition: background-color 0.3s, transform 0.3s;
-  border: 2px solid #0dd3d3; /* Blue border */
+    display: inline-block;
+    background-color: #0dd3d3; /* Blue color for button */
+    color: #fff;
+    padding: 1em 2em;
+    font-family: wowww;
+    text-decoration: none;
+    border-radius: 27px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #0dd3d3; /* Blue border */
 }
 
 .hero .btn:hover {
-  background-color: #0fb8b8; /* Darker blue on hover */
-  border-color: #0fb8b8; /* Darker blue border on hover */
-  transform: scale(1.05); /* Slightly scale up on hover */
+    background-color: #0fb8b8; /* Darker blue on hover */
+    border-color: #0fb8b8; /* Darker blue border on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
 }
 
 /* Services Section Styles */
 .services {
-  background: linear-gradient(to bottom, #050009, #11031c 5%, #11031c 95%, #050009);
-  padding: 5em 0;
-  text-align: center;
+    background: linear-gradient(to bottom, #050009, #11031c 5%, #11031c 95%, #050009);
+    background-color: #11031c;
+    padding: 5em 0;
+    text-align: center;
 }
 
 .services h2 {
-  color: #fff;
-  font-family: ppheehee;
-  font-size: 2.3rem;
-  margin-bottom: 1em;
+    color: #fff;
+    font-family: ppheehee;
+    font-size: 2.3rem;
+    margin-bottom: 1em;
 }
 
 .service-item {
-  background-color: #050009;
-  padding: 1.5em;
-  border-radius: 8px;
-  margin-bottom: 3em;
-  text-align: left;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s, outline 0.3s; /* Added outline transition */
-  outline: 2px solid transparent; /* Initially transparent outline */
+    background-color: #050009;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 3em;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, outline 0.3s; /* Added outline transition */
+    outline: 2px solid transparent; /* Initially transparent outline */
 }
 
 .service-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  outline-color: #00FFFF; /* Glowing outline color on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    outline-color: #00FFFF; /* Glowing outline color on hover */
 }
 
 .service-item h3 {
-  color: #fff;
-  font-size: 1.2rem;
-  margin-bottom: 0.2em;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.2em;
 }
 
 .service-item p {
-  color: #ccc;
-  font-size: 1rem;
+    color: #ccc;
+    font-size: 1rem;
 }
 
 /* About Section Styles */
 .about {
-  background: linear-gradient(to bottom, #11031c, #050009 5%, #050009 95%, #11031c);
-  color: #fff;
-  padding: 5em 0;
-  text-align: center;
+    background: linear-gradient(to bottom, #11031c 95%, #050009);
+    background-color: #050009;
+    color: #fff;
+    padding: 5em 0;
+    text-align: center;
 }
 
 .about h2 {
-  font-size: 2.3rem;
-  font-family: ppheehee;
-  margin-bottom: 1em;
+    font-size: 2.3rem;
+    font-family: ppheehee;
+    margin-bottom: 1em;
 }
 
 .team {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3em;
-  margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    margin-top: 2em;
 }
 
 .team-member {
-  text-align: center;
+    text-align: center;
 }
 
 .team-member img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 1em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .team-member img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .team-member h3 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5em;
+    font-size: 1.8rem;
+    margin-bottom: 0.5em;
 }
 
 .team-member p {
-  color: #888;
+    color: #888;
 }
 
 .social-media {
-  margin-top: 2em;
-  display: flex;
-  justify-content: center;
-  gap: 2em;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
 }
 
 .social-link {
-  font-family: wowww;
-  font-size: 1.2rem;
-  color: #7e9191;
-  text-decoration: none;
-  padding: 0.8em 0.8em;
-  border: 2px solid transparent;
-  border-radius: 8px; /* Added to round the corners */
-  transition: color 0.3s, border-color 0.3s;
+    font-family: wowww;
+    font-size: 1.2rem;
+    color: #7e9191;
+    text-decoration: none;
+    padding: 0.8em 0.8em;
+    border: 2px solid transparent;
+    border-radius: 8px; /* Added to round the corners */
+    transition: color 0.3s, border-color 0.3s;
 }
 
 .social-link:hover {
-  color: #0dd3d3;
-  border-color: #0dd3d3;
+    color: #0dd3d3;
+    border-color: #0dd3d3;
 }
 
 /* Blog Section Styles */
 .blog {
-  background: linear-gradient(to bottom, #050009, #11031c 5%, #11031c 95%, #050009);
-  padding: 5em 0;
-  text-align: center;
+    background-color: #11031c;
+    padding: 5em 0;
+    text-align: center;
 }
 
 .blog h2 {
-  color: #fff;
-  font-family: ppheehee;
-  font-size: 2.3rem;
-  margin-bottom: 1em;
+    color: #fff;
+    font-family: ppheehee;
+    font-size: 2.3rem;
+    margin-bottom: 1em;
 }
 
 .blog-item {
-  display: block; /* Make the anchor tag block level */
-  background-color: #050009;
-  padding: 1.5em;
-  border-radius: 8px;
-  margin-bottom: 1em;
-  text-align: left;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s, outline 0.3s;
-  outline: 2px solid transparent;
-  color: inherit; /* Ensure text color is inherited */
-  text-decoration: none; /* Remove underline */
+    display: block; /* Make the anchor tag block level */
+    background-color: #050009;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, outline 0.3s;
+    outline: 2px solid transparent;
+    color: inherit; /* Ensure text color is inherited */
+    text-decoration: none; /* Remove underline */
 }
 
 .blog-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  outline
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    outline-color: #00FFFF;
+}
+
+.blog-item h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+
+.blog-item p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 0em;
+}
+
+
+/* Bugs Section Styles */
+.bugs {
+    background-color: #050009;
+    padding: 5em 0;
+    text-align: center;
+}
+
+.bugs h2 {
+    color: #fff;
+    font-family: ppheehee;
+    font-size: 2.3rem;
+    margin-bottom: 1em;
+}
+
+.bug-item {
+    background-color: #11031c;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, outline 0.3s;
+    outline: 2px solid transparent;
+}
+
+.bug-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    outline-color: #00FFFF;
+}
+
+.bug-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.bug-item h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.3em;
+}
+
+.bug-item p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.bug-item .btn {
+    display: inline-block;
+    background-color: #0dd3d3;
+    color: #fff;
+    padding: 0.5em 2em;
+    font-family: wowww;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #0dd3d3;
+    margin-right: 0.9em; /* Space between buttons */
+}
+
+.bug-item .btn:hover {
+    background-color: #0fb8b8;
+    border-color: #0fb8b8;
+    transform: scale(1.05);
+}
+
+/* Cool Button Styles */
+.cool-btn {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    font-family: wowww;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    background-color: #0fb8b8;
+    border: none;
+    border-radius: 20px;
+    transition: background 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.6em;
+}
+
+.cool-btn:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.15);
+    transition: all 0.75s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0.25);
+}
+
+.cool-btn:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.cool-btn:hover {
+    background-color: #0fb8b8;
+    transform: scale(1.05);
 }
 
 /* Contact Section Styles */
 .contact {
-  background: linear-gradient(to bottom, #11031c, #050009 5%, #050009 95%, #11031c);
-  padding: 5em 0;
-  text-align: center;
+    background-color: #050009;
+    color: #fff;
+    padding: 5em 0;
+    text-align: center;
 }
 
 .contact h2 {
-  color: #fff;
-  font-family: ppheehee;
-  font-size: 2.3rem;
-  margin-bottom: 1em;
+    font-family: ppheehee;
+    font-size: 2.3rem;
+    margin-bottom: 0.8em;
 }
 
 .contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.contact form input, .contact form textarea {
-  width: 80%;
-  padding: 1em;
-  margin-bottom: 1em;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
+.contact label {
+    display: block;
+    font-family: wowww;
+    margin-bottom: 0.3em;
+    font-size: 1.1rem;
 }
 
-.contact form input[type="submit"] {
-  background-color: #0dd3d3;
-  color: #fff;
-  border: 2px solid #0dd3d3;
-  font-family: wowww;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    font-size: 1rem;
+    border: 2px solid #066969;
+    background-color: #140320;
+    color: #00FFFF;
+    border-radius: 4px;
+    height: 50px;
 }
 
-.contact form input[type="submit"]:hover {
-  background-color: #0fb8b8;
-  border-color: #0fb8b8;
-  transform: scale(1.05);
+.contact textarea {
+    height: 150px;
+}
+
+.contact button {
+    background-color: #0dd3d3;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact button:hover {
+    background-color: #0fb8b8; /* Darker blue on hover */
+    border-color: #0fb8b8; /* Darker blue border on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Tools and Packages Section Styles */
+.tools-packages {
+    background-color: #11031c;
+    padding: 5em 0;
+    text-align: center;
+}
+
+.tools-packages h2 {
+    color: #fff;
+    font-family: ppheehee;
+    font-size: 2.3rem;
+    margin-bottom: 1em;
+}
+
+.tool-item {
+    background-color: #050009;
+    padding: 1.5em;
+    border-radius: 8px;
+    margin-bottom: 3em;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s, outline 0.3s;
+    outline: 2px solid transparent;
+    color: inherit;
+}
+
+.tool-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    outline-color: #00FFFF;
+}
+
+.tool-item img.tool-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.tool-item h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+}
+
+.tool-item p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.tool-item .btn {
+    display: inline-block;
+    background-color: #0dd3d3;
+    color: #fff;
+    padding: 0.5em 1em;
+    font-family: wowww;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #0dd3d3;
+    margin-right: 1em; /* Add some space between buttons */
+}
+
+.tool-item .btn:hover {
+    background-color: #0fb8b8;
+    border-color: #0fb8b8;
+    transform: scale(1.05);
 }
 
 /* Footer Styles */
 .footer {
-  background-color: #000000;
-  color: #fff;
-  text-align: center;
-  padding: 2em 0;
-  font-family: Arial, sans-serif;
+    background-color: #11031c;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em 0;
 }
 
 .footer p {
-  margin: 0.5em 0;
+    margin: 0;
+}
+
+/* Scroll Animations */
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 992px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header nav ul {
+        margin-top: 1em;
+    }
+
+    .header nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .hero h2 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 0.8em 1.5em;
+    }
 }
